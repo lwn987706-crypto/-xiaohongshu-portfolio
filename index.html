@@ -448,14 +448,11 @@
 
 .proof-main {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
   display: block;
   border-radius: 12px;
   border: 1px solid #3b3b3b;
 }
-
 .proof-title {
   margin-top: 14px;
   font-size: 13px;
@@ -463,19 +460,17 @@
 }
 
 .bilibili-cases {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 18px;
 }
 
 .bilibili-cases img {
   width: 100%;
-  height: 165px;
-  object-fit: cover;
-  object-position: top;
+  height: auto;
   display: block;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #3b3b3b;
 }
 
@@ -534,31 +529,6 @@
   margin: 0;
 }
 
-@media (max-width: 900px) {
-
-  .bilibili-cases {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .proof-main {
-    height: auto;
-  }
-
-  .bilibili-cases img {
-    height: 140px;
-  }
-}
-
-@media (max-width: 550px) {
-
-  .bilibili-cases {
-    grid-template-columns: 1fr;
-  }
-
-  .bilibili-cases img {
-    height: auto;
-  }
-}
   </style>
 </head>
 
