@@ -14,6 +14,10 @@
       padding: 0;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       font-family: Arial, "Microsoft YaHei", sans-serif;
       background: #f7f6f2;
@@ -24,37 +28,63 @@
     nav {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 28px 7%;
       font-size: 14px;
+      border-bottom: 1px solid rgba(0,0,0,0.08);
     }
 
+    nav span {
+      color: #777;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    /* HERO */
+
     .hero {
-      min-height: 75vh;
+      min-height: 72vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 60px 7%;
+      padding: 70px 7%;
     }
 
     .tag {
-      font-size: 14px;
+      font-size: 13px;
       letter-spacing: 2px;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
+      color: #666;
     }
 
     h1 {
-      font-size: clamp(48px, 8vw, 110px);
-      line-height: 0.95;
-      max-width: 1100px;
+      font-size: clamp(48px, 7vw, 100px);
+      line-height: 0.98;
+      max-width: 1200px;
       letter-spacing: -4px;
     }
 
+    .hero-cn {
+      margin-top: 28px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .platforms {
+      margin-top: 8px;
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #777;
+    }
+
     .intro {
-      margin-top: 35px;
-      max-width: 650px;
-      font-size: 19px;
+      margin-top: 28px;
+      max-width: 760px;
+      font-size: 17px;
       color: #555;
     }
+
+    /* STATS */
 
     .stats {
       display: grid;
@@ -64,7 +94,7 @@
     }
 
     .stat {
-      padding: 40px 25px;
+      padding: 38px 18px;
       text-align: center;
       border-right: 1px solid #ccc;
     }
@@ -75,77 +105,277 @@
 
     .stat strong {
       display: block;
-      font-size: 30px;
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.2;
     }
 
     .stat span {
-      font-size: 12px;
+      display: block;
+      margin-top: 8px;
+      font-size: 11px;
       color: #777;
+      letter-spacing: 0.5px;
     }
+
+    /* GENERAL */
 
     section {
       padding: 100px 7%;
     }
 
     .section-number {
-      font-size: 13px;
+      font-size: 12px;
       letter-spacing: 2px;
       color: #777;
     }
 
     h2 {
-      font-size: clamp(38px, 5vw, 70px);
-      margin: 10px 0 45px;
+      font-size: clamp(38px, 5vw, 68px);
+      line-height: 1.05;
+      margin: 12px 0 25px;
+      letter-spacing: -2px;
+    }
+
+    .section-intro {
+      max-width: 720px;
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 45px;
     }
 
     .case-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
+      gap: 24px;
     }
 
     .case {
-      background: white;
-      padding: 40px;
+      background: #fff;
+      padding: 38px;
       border-radius: 18px;
-      min-height: 280px;
     }
 
     .case-label {
-      font-size: 12px;
-      letter-spacing: 1px;
+      font-size: 11px;
+      letter-spacing: 1.5px;
       color: #888;
     }
 
     .case h3 {
-      font-size: 28px;
-      margin: 20px 0;
+      font-size: 26px;
+      line-height: 1.25;
+      margin: 18px 0;
+    }
+
+    .case p {
+      color: #555;
+      margin-top: 12px;
     }
 
     .big-number {
-      font-size: 52px;
-      font-weight: bold;
+      font-size: clamp(42px, 5vw, 64px);
+      font-weight: 700;
+      line-height: 1;
+      margin: 22px 0 8px;
     }
 
-    .commercial {
+    .number-label {
+      font-size: 11px;
+      color: #888;
+      letter-spacing: 1px;
+      margin-bottom: 22px;
+    }
+
+    /* 01 MULTI PLATFORM */
+
+    .platform-case {
       background: #171717;
-      color: white;
+      color: #fff;
     }
 
-    .commercial .case {
-      background: #262626;
+    .platform-case .section-number {
+      color: #999;
     }
 
-    .commercial .case-label {
+    .platform-case .section-intro {
       color: #aaa;
     }
 
+    .platform-case .case {
+      background: #262626;
+    }
+
+    .platform-case .case p {
+      color: #bbb;
+    }
+
+    .platform-case .case-label {
+      color: #999;
+    }
+
+    .platform-data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      margin: 25px 0;
+    }
+
+    .mini-stat {
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 12px;
+    }
+
+    .mini-stat strong {
+      display: block;
+      font-size: 30px;
+    }
+
+    .mini-stat span {
+      font-size: 11px;
+      color: #aaa;
+    }
+
+    .image-placeholder {
+      margin-top: 25px;
+      min-height: 260px;
+      border: 1px dashed #666;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #888;
+      padding: 30px;
+      font-size: 13px;
+    }
+
+    /* XHS */
+
+    .account-layout {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .account-image img {
+      width: 100%;
+      max-width: 380px;
+      display: block;
+      margin: auto;
+      border-radius: 18px;
+    }
+
+    .account-copy h3 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+
+    .account-copy p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .account-numbers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .account-number {
+      border-top: 1px solid #ccc;
+      padding-top: 15px;
+    }
+
+    .account-number strong {
+      display: block;
+      font-size: 25px;
+    }
+
+    .account-number span {
+      font-size: 10px;
+      color: #777;
+    }
+
+    /* ORIGINAL CASES */
+
+    .content-images {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 30px;
+    }
+
+    .content-images img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* COMMERCIAL */
+
+    .commercial {
+      background: #e9e7e0;
+    }
+
+    /* AI WORKFLOW */
+
+    .workflow {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .workflow-step {
+      background: white;
+      padding: 28px;
+      border-radius: 15px;
+      min-height: 220px;
+    }
+
+    .workflow-step span {
+      font-size: 11px;
+      color: #888;
+    }
+
+    .workflow-step h3 {
+      font-size: 21px;
+      margin: 15px 0;
+    }
+
+    .workflow-step p {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* FOOTER */
+
     footer {
-      padding: 80px 7%;
+      padding: 100px 7%;
       border-top: 1px solid #ccc;
     }
 
-    @media (max-width: 800px) {
+    footer h2 {
+      margin-bottom: 20px;
+    }
+
+    footer p {
+      color: #555;
+      margin-top: 6px;
+    }
+
+    @media (max-width: 900px) {
 
       .stats {
         grid-template-columns: repeat(2, 1fr);
@@ -155,353 +385,626 @@
         border-bottom: 1px solid #ccc;
       }
 
-      .case-grid {
+      .case-grid,
+      .account-layout {
         grid-template-columns: 1fr;
+      }
+
+      .workflow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .content-images {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       h1 {
         letter-spacing: -2px;
       }
     }
-    .portfolio-image {
-    width: 100%;
-    max-width: 420px;
-    margin: 40px auto;
-}
 
-.portfolio-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 16px;
-}
-    <div class="image-caption">
-  <strong>3,100+ Followers · 281K+ Likes & Saves</strong><br>
-  Independently built and operated a Xiaohongshu account,
-  covering content planning, creation, audience engagement
-  and commercial collaborations.
-</div>
+    @media (max-width: 550px) {
+
+      nav span {
+        display: none;
+      }
+
+      section {
+        padding: 75px 6%;
+      }
+
+      .hero {
+        padding: 60px 6%;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .platform-data,
+      .account-numbers,
+      .workflow {
+        grid-template-columns: 1fr;
+      }
+
+      .content-images {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .content-images img {
+        height: 230px;
+      }
+    }
+
   </style>
 </head>
 
 
 <body>
 
-<nav>
-  <strong>NING WEI</strong>
-  <span>CONTENT · SOCIAL MEDIA · GROWTH</span>
-</nav>
+  <!-- NAV -->
+
+  <nav>
+    <strong>NING WEI</strong>
+    <span>CONTENT · SOCIAL MEDIA · GROWTH</span>
+  </nav>
 
 
-<section class="hero">
+  <!-- HERO -->
 
-  <div class="tag">
-    CONTENT & SOCIAL MEDIA PORTFOLIO
+  <section class="hero">
+
+    <div class="tag">
+      CONTENT & SOCIAL MEDIA PORTFOLIO
+    </div>
+
+    <h1>
+      I TURN CONTENT<br>
+      INTO ATTENTION<br>
+      & ACTION.
+    </h1>
+
+    <div class="hero-cn">
+      宁玮｜新媒体 & 内容运营作品集
+    </div>
+
+    <div class="platforms">
+      XIAOHONGSHU × BILIBILI × DOUYIN
+    </div>
+
+    <p class="intro">
+      Newcastle University MSc graduate with hands-on experience
+      across social media content creation, short-form video,
+      account operation and commercial collaborations.
+      From fandom content and video editing to independently
+      operating a Xiaohongshu account, I use real content
+      performance to understand what makes audiences click,
+      engage, save and share.
+    </p>
+
+  </section>
+
+
+  <!-- CORE DATA -->
+
+  <div class="stats">
+
+    <div class="stat">
+      <strong>1.163M+</strong>
+      <span>BILIBILI TOTAL VIEWS</span>
+    </div>
+
+    <div class="stat">
+      <strong>99K+</strong>
+      <span>BILIBILI TOTAL LIKES</span>
+    </div>
+
+    <div class="stat">
+      <strong>410K+</strong>
+      <span>DOUYIN TOTAL LIKES</span>
+    </div>
+
+    <div class="stat">
+      <strong>281K+</strong>
+      <span>XIAOHONGSHU LIKES & SAVES</span>
+    </div>
+
+    <div class="stat">
+      <strong>3.1K+</strong>
+      <span>XIAOHONGSHU FOLLOWERS</span>
+    </div>
+
+    <div class="stat">
+      <strong>22</strong>
+      <span>BRAND COLLABORATIONS</span>
+    </div>
+
   </div>
 
-  <h1>
-    <h1>I TURN CONTENT<br>INTO ATTENTION<br>& ACTION.</h1>
-  </h1>
 
-  <p class="intro">
-    <p>
-Newcastle University MSc graduate with hands-on experience in content operations,
-audience engagement and social media commercialization.
-Independently built and operated a Xiaohongshu account with 3,100+ followers,
-280K+ likes & saves and 22 completed brand collaborations,
-covering study abroad, travel and lifestyle content.
-</p>
-  </p>
+  <!-- 01 -->
 
-</section>
+  <section class="platform-case">
 
+    <span class="section-number">
+      01 — MULTI-PLATFORM CONTENT PRACTICE
+    </span>
 
-<div class="stats">
+    <h2>
+      Bilibili × Douyin<br>
+      Short-form Content Practice.
+    </h2>
 
-  <div class="stat">
-    <strong>3.1K+</strong>
-    <span>FOLLOWERS</span>
-  </div>
-
-  <div class="stat">
-    <strong>281K</strong>
-    <span>LIFETIME LIKES & SAVES</span>
-  </div>
-
-  <div class="stat">
-    <strong>450K+</strong>
-    <span>PEAK CONTENT VIEWS</span>
-  </div>
-
-  <div class="stat">
-    <strong>32K+</strong>
-    <span>PEAK LIKES</span>
-  </div>
-
-  <div class="stat">
-    <strong>22</strong>
-    <span>BRAND COLLABORATIONS</span>
-  </div>
-
-  <div class="stat">
-    <strong>¥4,587</strong>
-    <span>COLLABORATION REVENUE</span>
-  </div>
-
-</div>
-  
-<div class="portfolio-image">
-   <img src="xiaohongshu-profile.jpg" alt="Xiaohongshu Profile">
-</div>
-
-<section>
-  <span class="section-number">01 — CONTENT EVOLUTION</span>
-
-  <h2>From Viral Content<br>to Personal IP.</h2>
+    <p class="section-intro">
+      My early content practice started with entertainment and
+      fandom-focused short-form video. Through content curation,
+      video editing and trend-based topic selection, I developed
+      a practical understanding of audience attention and
+      platform-specific content performance.
+    </p>
 
 
-  <div class="case-grid">
+    <div class="case-grid">
 
-    <div class="case">
+      <!-- BILIBILI -->
 
-      <span class="case-label">
-        PHASE 01 · VIRAL CONTENT
-      </span>
+      <div class="case">
 
-      <h3>Entertainment & Fandom Content</h3>
+        <span class="case-label">
+          BILIBILI · CONTENT PRACTICE
+        </span>
 
-      <div class="big-number">450K+</div>
-<div style="font-size:12px; color:#777; margin-top:-8px; margin-bottom:18px;">
-    PEAK CONTENT VIEWS · EARLY-STAGE ACCOUNT
-</div>
+        <h3>
+          Fandom Video Editing & Content Selection
+        </h3>
 
-   <div style="
-  display:grid;
-  grid-template-columns:repeat(3, 1fr);
-  gap:16px;
-  margin:28px 0 24px 0;
-  width:100%;
-">
+        <div class="platform-data">
 
-  <img src="xiaohongshu2-profile.jpg"
-       alt="Viral Content 1"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
+          <div class="mini-stat">
+            <strong>1.163M+</strong>
+            <span>TOTAL VIEWS</span>
+          </div>
 
-  <img src="xiaohongshu3-profile.jpg"
-       alt="Viral Content 2"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
+          <div class="mini-stat">
+            <strong>99K+</strong>
+            <span>TOTAL LIKES</span>
+          </div>
 
-  <img src="xiaohongshu4-profile.jpg"
-       alt="Viral Content 3"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
+        </div>
 
-  <img src="xiaohongshu5-profile.jpg"
-       alt="Viral Content 4"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
-
-  <img src="xiaohongshu6-profile.jpg"
-       alt="Viral Content 5"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
-
-  <img src="xiaohongshu7-profile.jpg"
-       alt="Viral Content 6"
-       style="width:100%; height:260px; object-fit:cover; object-position:top; border-radius:10px;">
-
-</div>
-      
-      <p>
         <p>
-Early-stage content focused on entertainment and fandom topics,
-combining content curation and video editing. This phase generated
-strong traffic performance, with peak content reaching 450K+ views,
-and helped me develop practical skills in trend spotting, content
-selection and audience engagement.
-</p>
-      </p>
+          Produced and edited fandom-focused video content,
+          combining trending topics, material selection,
+          pacing and emotional hooks to improve audience
+          attention and engagement.
+        </p>
+
+        <p>
+          This experience helped me build practical skills in
+          trend spotting, content selection, video editing and
+          understanding what types of content resonate with
+          specific online communities.
+        </p>
+
+        <div class="image-placeholder">
+          BILIBILI SCREENSHOTS<br><br>
+          下一步把你的 B站主页 / 数据截图放在这里
+        </div>
+
+      </div>
+
+
+      <!-- DOUYIN -->
+
+      <div class="case">
+
+        <span class="case-label">
+          DOUYIN · SHORT-FORM VIDEO
+        </span>
+
+        <h3>
+          Platform-oriented Short Video Practice
+        </h3>
+
+        <div class="platform-data">
+
+          <div class="mini-stat">
+            <strong>410K+</strong>
+            <span>TOTAL LIKES</span>
+          </div>
+
+          <div class="mini-stat">
+            <strong>Short-form</strong>
+            <span>VIDEO CONTENT</span>
+          </div>
+
+        </div>
+
+        <p>
+          Explored short-form video content on Douyin with a
+          focus on entertainment and fandom audiences.
+        </p>
+
+        <p>
+          By observing differences in content rhythm, hooks and
+          engagement behaviour across platforms, I developed
+          a stronger understanding of how the same audience
+          interest can require different content presentation.
+        </p>
+
+        <div class="image-placeholder">
+          DOUYIN SCREENSHOTS<br><br>
+          下一步把你的抖音主页 / 数据截图放在这里
+        </div>
+
+      </div>
 
     </div>
+
+  </section>
+
+
+  <!-- 02 -->
+
+  <section>
+
+    <span class="section-number">
+      02 — XIAOHONGSHU ACCOUNT OPERATION
+    </span>
+
+    <h2>
+      From Traffic Content<br>
+      to Personal Content Identity.
+    </h2>
+
+    <p class="section-intro">
+      I independently operate a Xiaohongshu account covering
+      content planning, creation, publishing, audience
+      engagement and commercial collaborations.
+    </p>
+
+
+    <div class="account-layout">
+
+      <div class="account-image">
+
+        <img
+          src="xiaohongshu-profile.jpg"
+          alt="Ning Wei Xiaohongshu Account"
+        >
+
+      </div>
+
+
+      <div class="account-copy">
+
+        <span class="case-label">
+          ACCOUNT OPERATION · CONTENT TRANSITION
+        </span>
+
+        <h3>
+          Study Abroad · Travel · Lifestyle
+        </h3>
+
+        <p>
+          The account initially included entertainment and
+          fandom-related content. I later repositioned it around
+          my own overseas study experience, European travel and
+          lifestyle content.
+        </p>
+
+        <p>
+          This transition allowed me to move from primarily
+          traffic-driven content toward a more sustainable
+          personal content identity built around useful
+          information and authentic experiences.
+        </p>
+
+        <div class="account-numbers">
+
+          <div class="account-number">
+            <strong>3.1K+</strong>
+            <span>FOLLOWERS</span>
+          </div>
+
+          <div class="account-number">
+            <strong>281K+</strong>
+            <span>LIKES & SAVES</span>
+          </div>
+
+          <div class="account-number">
+            <strong>22</strong>
+            <span>BRAND COLLABORATIONS</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- 03 -->
+
+  <section>
+
+    <span class="section-number">
+      03 — CONTENT PERFORMANCE
+    </span>
+
+    <h2>
+      Content That<br>
+      Earned Attention.
+    </h2>
+
+    <p class="section-intro">
+      Selected historical high-performing posts from my
+      Xiaohongshu account. These include early-stage
+      entertainment and fandom content and are presented
+      as evidence of content selection, editing and
+      audience-engagement experience rather than as
+      fully original personal-IP content.
+    </p>
 
 
     <div class="case">
 
       <span class="case-label">
-        PHASE 02 · CONTENT TRANSITION
+        HISTORICAL HIGH-PERFORMING CONTENT
       </span>
 
-      <h3>Study Abroad · Travel · Lifestyle</h3>
+      <h3>
+        Entertainment & Fandom Content
+      </h3>
 
-      <p>
-        I later repositioned the account around my overseas
-        study experience, European travel and lifestyle content,
-        gradually transforming traffic-driven content into a
-        more sustainable personal content identity.
+      <div class="big-number">
+        450K+
+      </div>
+
+      <div class="number-label">
+        PEAK HISTORICAL CONTENT VIEWS
+      </div>
+
+
+      <div class="content-images">
+
+        <img
+          src="xiaohongshu2-profile.jpg"
+          alt="Historical Xiaohongshu Content 1"
+        >
+
+        <img
+          src="xiaohongshu3-profile.jpg"
+          alt="Historical Xiaohongshu Content 2"
+        >
+
+        <img
+          src="xiaohongshu4-profile.jpg"
+          alt="Historical Xiaohongshu Content 3"
+        >
+
+        <img
+          src="xiaohongshu5-profile.jpg"
+          alt="Historical Xiaohongshu Content 4"
+        >
+
+        <img
+          src="xiaohongshu6-profile.jpg"
+          alt="Historical Xiaohongshu Content 5"
+        >
+
+        <img
+          src="xiaohongshu7-profile.jpg"
+          alt="Historical Xiaohongshu Content 6"
+        >
+
+      </div>
+
+
+      <p class="note">
+        * Historical account performance includes curated,
+        edited and fandom-related content. Metrics are used
+        to demonstrate content judgement and platform
+        engagement experience.
       </p>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<section>
+  <!-- 04 -->
 
-  <span class="section-number">02 — SELECTED WORK</span>
+  <section class="commercial">
 
-  <h2>Content People<br>Save & Share.</h2>
+    <span class="section-number">
+      04 — COMMERCIAL COLLABORATIONS
+    </span>
 
-  <div class="case-grid">
+    <h2>
+      Turning Content<br>
+      Into Commercial Value.
+    </h2>
 
-    <div class="case">
-
-      <span class="case-label">
-        TRAVEL CONTENT
-      </span>
-
-      <h3>Amsterdam Travel Story</h3>
-
-      <div class="big-number">195</div>
-
-      <p>
-        Likes · 127 Saves · 16 Comments · 44 Shares
-      </p>
-
-      <p>
-        A personal travel story combining destination
-        recommendations with visual storytelling.
-      </p>
-
-    </div>
+    <p class="section-intro">
+      Beyond traffic and engagement, I have also gained
+      hands-on experience working with brands and integrating
+      commercial messages into social content.
+    </p>
 
 
-    <div class="case">
+    <div class="case-grid">
 
-      <span class="case-label">
-        TRAVEL GUIDE
-      </span>
+      <div class="case">
 
-      <h3>UK Weekend Travel Guide</h3>
+        <span class="case-label">
+          BRAND COLLABORATIONS
+        </span>
 
-      <div class="big-number">142</div>
+        <div class="big-number">
+          22
+        </div>
 
-      <p>
-        Likes · 74 Saves · 14 Shares
-      </p>
+        <h3>
+          Completed Collaborations
+        </h3>
 
-      <p>
-        Useful destination information was integrated with
-        personal travel experience to encourage saves and sharing.
-      </p>
+        <p>
+          Worked on sponsored content across study-abroad,
+          travel and lifestyle scenarios, integrating brand
+          messages into content rather than treating
+          advertisements as isolated posts.
+        </p>
 
-    </div>
-
-  </div>
-
-</section>
+      </div>
 
 
-<section class="commercial">
+      <div class="case">
 
-  <span class="section-number">03 — COMMERCIALISATION</span>
+        <span class="case-label">
+          COMMERCIAL RESULT
+        </span>
 
-  <h2>Content That<br>Creates Value.</h2>
+        <div class="big-number">
+          ¥4,587
+        </div>
 
-  <div class="case-grid">
+        <h3>
+          Collaboration Revenue
+        </h3>
 
-    <div class="case">
+        <p>
+          Converted personal social media content into
+          measurable commercial value through paid
+          collaborations and brand partnerships.
+        </p>
 
-      <span class="case-label">
-        BRAND COLLABORATIONS
-      </span>
-
-      <div class="big-number">22</div>
-
-      <h3>Completed Collaborations</h3>
-
-      <p>
-        Experience integrating commercial messages into
-        study-abroad, lifestyle and travel scenarios rather
-        than treating sponsored posts as standalone advertisements.
-      </p>
+      </div>
 
     </div>
 
+  </section>
 
-    <div class="case">
 
-      <span class="case-label">
-        COMMERCIAL RESULT
-      </span>
+  <!-- 05 -->
 
-      <div class="big-number">¥4,587</div>
+  <section>
 
-      <h3>Total Collaboration Revenue</h3>
+    <span class="section-number">
+      05 — CONTENT WORKFLOW & AI
+    </span>
 
-      <p>
-        Turned personal content creation into measurable
-        commercial value through brand partnerships.
-      </p>
+    <h2>
+      How I Work.
+    </h2>
+
+    <p class="section-intro">
+      I combine content judgement with AI-assisted tools
+      to improve research, ideation, copy development and
+      iteration efficiency.
+    </p>
+
+
+    <div class="workflow">
+
+      <div class="workflow-step">
+
+        <span>STEP 01</span>
+
+        <h3>
+          Audience Insight
+        </h3>
+
+        <p>
+          Identify audience interests, search needs,
+          trends and potential content angles.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>STEP 02</span>
+
+        <h3>
+          Content Strategy
+        </h3>
+
+        <p>
+          Turn audience needs into topics, hooks,
+          titles and content structures.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>STEP 03</span>
+
+        <h3>
+          Production
+        </h3>
+
+        <p>
+          Create and edit copy, visual content and
+          short-form video for different platforms.
+        </p>
+
+      </div>
+
+
+      <div class="workflow-step">
+
+        <span>STEP 04</span>
+
+        <h3>
+          Review & AI-assisted Iteration
+        </h3>
+
+        <p>
+          Review performance data and use AI tools
+          to support research, copy optimisation,
+          ideation and workflow efficiency.
+        </p>
+
+      </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<section>
+  <!-- ABOUT -->
 
-  <span class="section-number">04 — MY PROCESS</span>
+  <footer>
 
-  <h2>How I Create.</h2>
+    <span class="section-number">
+      ABOUT ME
+    </span>
 
-  <div class="case-grid">
+    <h2>
+      Ning Wei
+    </h2>
 
-    <div class="case">
-      <span class="case-label">STEP 01</span>
-      <h3>Audience Insight</h3>
-      <p>Identify what users care about and why they would click, save or share.</p>
-    </div>
+    <p>
+      Newcastle University · MSc Accounting & Finance
+    </p>
 
-    <div class="case">
-      <span class="case-label">STEP 02</span>
-      <h3>Content Strategy</h3>
-      <p>Turn user needs into topics, titles, visual hooks and content structures.</p>
-    </div>
+    <p>
+      Content Operations · Social Media · New Media · Brand Content
+    </p>
 
-    <div class="case">
-      <span class="case-label">STEP 03</span>
-      <h3>Production</h3>
-      <p>Create copy, images and short-form video content independently.</p>
-    </div>
+    <p style="margin-top:25px; max-width:650px;">
+      Interested in understanding why people click,
+      engage, save and share — and turning those
+      insights into content that creates measurable value.
+    </p>
 
-    <div class="case">
-      <span class="case-label">STEP 04</span>
-      <h3>Review & Optimise</h3>
-      <p>Observe engagement behaviour and use performance results to improve future content.</p>
-    </div>
-
-  </div>
-
-</section>
-
-
-</section>
-<footer>
-
-  <span class="section-number">ABOUT ME</span>
-
-  <h2>Ning Wei</h2>
-
-  <p>
-    Newcastle University · MSc Accounting & Finance
-  </p>
-
-  <p>
-    Interested in Content Operations · Social Media · Marketing · Brand
-  </p>
-
-</footer>
+  </footer>
 
 </body>
 </html>
