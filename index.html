@@ -440,6 +440,125 @@
       }
     }
 
+    /* ===== 01 多平台案例最终图片布局 ===== */
+
+.platform-proof {
+  margin-top: 28px;
+}
+
+.proof-main {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid #3b3b3b;
+}
+
+.proof-title {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #999;
+}
+
+.bilibili-cases {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.bilibili-cases img {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #3b3b3b;
+}
+
+.case-skills {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #3c3c3c;
+}
+
+.case-skills-title {
+  font-size: 11px;
+  letter-spacing: 1.2px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  padding: 7px 11px;
+  border: 1px solid #444;
+  border-radius: 100px;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.douyin-proof {
+  width: 100%;
+  margin-top: 28px;
+  border-radius: 12px;
+  display: block;
+  border: 1px solid #3b3b3b;
+}
+
+.platform-summary {
+  margin-top: 32px;
+  padding: 24px 28px;
+  border: 1px solid #333;
+  border-radius: 14px;
+  background: #202020;
+}
+
+.platform-summary strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.platform-summary p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+
+  .bilibili-cases {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .proof-main {
+    height: auto;
+  }
+
+  .bilibili-cases img {
+    height: 140px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .bilibili-cases {
+    grid-template-columns: 1fr;
+  }
+
+  .bilibili-cases img {
+    height: auto;
+  }
+}
   </style>
 </head>
 
@@ -499,7 +618,7 @@
   </div>
 
   <div class="stat">
-    <strong>41万+</strong>
+    <strong>41.6万+</strong>
     <span>抖音累计获赞</span>
   </div>
 
@@ -523,6 +642,8 @@
 
 <!-- 01 -->
 
+<!-- 01 -->
+
 <section class="platform-case">
 
   <span class="section-number">
@@ -531,17 +652,18 @@
 
   <h2>
     B站 × 抖音<br>
-    粉丝向短视频内容实践
+    娱乐 / 粉丝向短视频内容实践
   </h2>
 
   <p class="section-intro">
-    从兴趣驱动的粉丝向内容切入，通过素材筛选、视频剪辑、选题判断和内容发布，
-    积累短视频内容实践经验。不同平台的数据反馈也让我逐步形成对热点、
-    用户兴趣和内容节奏的理解。
+    从兴趣驱动的娱乐及粉丝向内容切入，围绕热点、人物关系和粉丝兴趣进行
+    素材筛选、内容切入点判断、视频剪辑与标题包装。
+    通过持续发布和数据反馈，逐步形成对用户兴趣、情绪点及不同平台内容节奏的理解。
   </p>
 
 
   <div class="case-grid">
+
 
     <!-- B站 -->
 
@@ -552,8 +674,9 @@
       </span>
 
       <h3>
-        B站｜粉丝向视频剪辑与内容选择
+        B站｜内容剪辑与选题实践
       </h3>
+
 
       <div class="platform-data">
 
@@ -563,28 +686,94 @@
         </div>
 
         <div class="mini-stat">
-          <strong>9.9万+</strong>
-          <span>累计获赞</span>
+          <strong>112</strong>
+          <span>累计投稿</span>
+        </div>
+
+        <div class="mini-stat">
+          <strong>12.8万+</strong>
+          <span>单条最高播放</span>
+        </div>
+
+        <div class="mini-stat">
+          <strong>1.2万+</strong>
+          <span>单条最高点赞</span>
         </div>
 
       </div>
 
+
       <p>
-        围绕娱乐及粉丝兴趣内容进行素材筛选与视频剪辑，
-        根据人物、热点和用户兴趣判断内容方向，并通过节奏、
-        情绪点和素材组合提升视频的可看性。
+        围绕娱乐及粉丝兴趣进行内容生产，根据人物、热点和粉丝关注点筛选素材，
+        并通过情绪点提炼、视频节奏、标题包装等方式完成短视频内容。
       </p>
 
       <p>
-        这段实践让我积累了热点判断、素材筛选、短视频剪辑以及
-        粉丝社群内容偏好分析等经验。
+        112篇内容的持续实践，让我能够从真实数据反馈中观察不同选题、
+        内容切入方式与用户互动之间的关系。
       </p>
 
-      <div class="image-placeholder">
-        B站账号 / 数据截图位置
+
+      <!-- B站证据 -->
+
+      <div class="platform-proof">
+
+        <img
+          src="B站5.jpg"
+          alt="B站创作中心数据"
+          class="proof-main"
+        >
+
+        <div class="proof-title">
+          账号数据总览 · 116.3万累计播放 / 112篇投稿
+        </div>
+
+
+        <div class="bilibili-cases">
+
+          <img
+            src="B站.jpg"
+            alt="B站代表内容案例1"
+          >
+
+          <img
+            src="B站1.jpg"
+            alt="B站代表内容案例2"
+          >
+
+          <img
+            src="B站2.jpg"
+            alt="B站代表内容案例3"
+          >
+
+        </div>
+
+        <div class="proof-title">
+          部分代表内容表现
+        </div>
+
+      </div>
+
+
+      <div class="case-skills">
+
+        <div class="case-skills-title">
+          CONTENT PRACTICE
+        </div>
+
+        <div class="skill-tags">
+          <span>热点捕捉</span>
+          <span>素材筛选</span>
+          <span>情绪点提炼</span>
+          <span>视频剪辑</span>
+          <span>标题包装</span>
+          <span>数据观察</span>
+        </div>
+
       </div>
 
     </div>
+
 
 
     <!-- 抖音 -->
@@ -596,43 +785,100 @@
       </span>
 
       <h3>
-        抖音｜短视频内容实践
+        抖音｜短视频内容与平台适配
       </h3>
+
 
       <div class="platform-data">
 
         <div class="mini-stat">
-          <strong>41万+</strong>
+          <strong>41.6万+</strong>
           <span>累计获赞</span>
         </div>
 
         <div class="mini-stat">
-          <strong>短视频</strong>
-          <span>内容实践</span>
+          <strong>929</strong>
+          <span>账号粉丝</span>
+        </div>
+
+        <div class="mini-stat">
+          <strong>16.2万+</strong>
+          <span>代表作播放</span>
+        </div>
+
+        <div class="mini-stat">
+          <strong>14.7万+</strong>
+          <span>代表作播放</span>
         </div>
 
       </div>
 
+
       <p>
-        围绕娱乐及粉丝向内容进行短视频创作与剪辑，
-        并根据抖音的内容节奏和用户浏览习惯调整呈现方式。
+        将相似的娱乐及粉丝兴趣内容延伸至抖音，
+        根据平台更快速的浏览节奏调整视频开头、内容长度和情绪表达，
+        观察同类内容在不同平台中的传播差异。
       </p>
 
       <p>
-        通过对比不同平台的内容表现，我开始关注开头吸引力、
-        视频节奏、情绪点以及平台用户偏好之间的差异。
+        账号累计获得41.6万+点赞，多条内容播放量超过10万，
+        让我进一步积累了短视频平台内容适配和用户兴趣判断经验。
       </p>
 
-      <div class="image-placeholder">
-        抖音账号 / 数据截图位置
+
+      <!-- 抖音证据 -->
+
+      <img
+        src="dy.jpg"
+        alt="抖音账号主页及内容数据"
+        class="douyin-proof"
+      >
+
+      <div class="proof-title">
+        账号数据总览 · 41.6万累计获赞 / 多条10万+播放内容
+      </div>
+
+
+      <div class="case-skills">
+
+        <div class="case-skills-title">
+          PLATFORM PRACTICE
+        </div>
+
+        <div class="skill-tags">
+          <span>短视频剪辑</span>
+          <span>开头吸引力</span>
+          <span>节奏调整</span>
+          <span>用户兴趣判断</span>
+          <span>平台适配</span>
+          <span>数据反馈</span>
+        </div>
+
       </div>
 
     </div>
 
   </div>
 
-</section>
 
+  <!-- 案例总结 -->
+
+  <div class="platform-summary">
+
+    <strong>
+      从“做内容”到“理解内容为什么获得传播”
+    </strong>
+
+    <p>
+      B站与抖音的长期内容实践让我建立了最早的内容敏感度：
+      从热点和素材中寻找值得传播的切入点，并通过真实的播放、
+      点赞与互动反馈不断判断用户真正感兴趣的内容。
+      这些经验也成为后续独立运营小红书账号、进行原创内容转型及商业合作的基础。
+    </p>
+
+  </div>
+
+</section>
 
 <!-- 02 -->
 
