@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ning Wei | Content & Social Media Portfolio</title>
+  <title>蔚凝 WEINING | 新媒体 & 内容运营作品集</title>
 
   <style>
     * {
@@ -22,7 +22,7 @@
       font-family: Arial, "Microsoft YaHei", sans-serif;
       background: #f7f6f2;
       color: #171717;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     nav {
@@ -34,13 +34,17 @@
       border-bottom: 1px solid rgba(0,0,0,0.08);
     }
 
+    nav strong {
+      font-size: 15px;
+    }
+
     nav span {
       color: #777;
       font-size: 12px;
       letter-spacing: 1px;
     }
 
-    /* HERO */
+    /* 首页 */
 
     .hero {
       min-height: 72vh;
@@ -54,27 +58,27 @@
       font-size: 13px;
       letter-spacing: 2px;
       margin-bottom: 24px;
-      color: #666;
+      color: #777;
     }
 
     h1 {
       font-size: clamp(48px, 7vw, 100px);
-      line-height: 0.98;
+      line-height: 1.03;
       max-width: 1200px;
       letter-spacing: -4px;
     }
 
-    .hero-cn {
-      margin-top: 28px;
-      font-size: 22px;
-      font-weight: 600;
+    .hero-name {
+      margin-top: 30px;
+      font-size: 23px;
+      font-weight: 700;
     }
 
     .platforms {
-      margin-top: 8px;
-      font-size: 15px;
-      letter-spacing: 1px;
+      margin-top: 7px;
       color: #777;
+      font-size: 14px;
+      letter-spacing: 1px;
     }
 
     .intro {
@@ -84,7 +88,7 @@
       color: #555;
     }
 
-    /* STATS */
+    /* 核心数据 */
 
     .stats {
       display: grid;
@@ -94,7 +98,7 @@
     }
 
     .stat {
-      padding: 38px 18px;
+      padding: 38px 16px;
       text-align: center;
       border-right: 1px solid #ccc;
     }
@@ -112,12 +116,11 @@
     .stat span {
       display: block;
       margin-top: 8px;
-      font-size: 11px;
+      font-size: 12px;
       color: #777;
-      letter-spacing: 0.5px;
     }
 
-    /* GENERAL */
+    /* 通用 */
 
     section {
       padding: 100px 7%;
@@ -131,13 +134,13 @@
 
     h2 {
       font-size: clamp(38px, 5vw, 68px);
-      line-height: 1.05;
+      line-height: 1.08;
       margin: 12px 0 25px;
       letter-spacing: -2px;
     }
 
     .section-intro {
-      max-width: 720px;
+      max-width: 760px;
       color: #666;
       font-size: 16px;
       margin-bottom: 45px;
@@ -150,47 +153,46 @@
     }
 
     .case {
-      background: #fff;
+      background: white;
       padding: 38px;
       border-radius: 18px;
     }
 
     .case-label {
       font-size: 11px;
-      letter-spacing: 1.5px;
+      letter-spacing: 1.3px;
       color: #888;
     }
 
     .case h3 {
       font-size: 26px;
-      line-height: 1.25;
+      line-height: 1.35;
       margin: 18px 0;
     }
 
     .case p {
       color: #555;
-      margin-top: 12px;
+      margin-top: 13px;
     }
 
     .big-number {
       font-size: clamp(42px, 5vw, 64px);
-      font-weight: 700;
+      font-weight: bold;
       line-height: 1;
       margin: 22px 0 8px;
     }
 
     .number-label {
-      font-size: 11px;
+      font-size: 12px;
       color: #888;
-      letter-spacing: 1px;
       margin-bottom: 22px;
     }
 
-    /* 01 MULTI PLATFORM */
+    /* 01 B站抖音 */
 
     .platform-case {
       background: #171717;
-      color: #fff;
+      color: white;
     }
 
     .platform-case .section-number {
@@ -215,7 +217,7 @@
 
     .platform-data {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2,1fr);
       gap: 15px;
       margin: 25px 0;
     }
@@ -238,32 +240,38 @@
 
     .image-placeholder {
       margin-top: 25px;
-      min-height: 260px;
+      min-height: 230px;
       border: 1px dashed #666;
       border-radius: 12px;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       text-align: center;
       color: #888;
-      padding: 30px;
+      padding: 25px;
       font-size: 13px;
     }
 
-    /* XHS */
+    /* 02 小红书 */
 
     .account-layout {
       display: grid;
-      grid-template-columns: 0.8fr 1.2fr;
+      grid-template-columns: 0.75fr 1.25fr;
       gap: 60px;
+      align-items: center;
+    }
+
+    .account-image {
+      display: flex;
+      justify-content: center;
       align-items: center;
     }
 
     .account-image img {
       width: 100%;
-      max-width: 380px;
+      max-width: 330px;
+      height: auto;
       display: block;
-      margin: auto;
       border-radius: 18px;
     }
 
@@ -274,13 +282,13 @@
 
     .account-copy p {
       color: #555;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
     .account-numbers {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      grid-template-columns: repeat(3,1fr);
+      gap: 14px;
       margin-top: 28px;
     }
 
@@ -295,45 +303,51 @@
     }
 
     .account-number span {
-      font-size: 10px;
+      font-size: 11px;
       color: #777;
     }
 
-    /* ORIGINAL CASES */
+    /* 03 历史内容 */
+
+    .history-card {
+      background: white;
+      padding: 38px;
+      border-radius: 18px;
+    }
 
     .content-images {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 12px;
-  margin-top: 28px;
-}
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
 
-.content-images img {
-  width: 100%;
-  height: 210px;
-  object-fit: cover;
-  object-position: top;
-  border-radius: 10px;
-  display: block;
-}
+    .content-images img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 10px;
+      display: block;
+    }
 
     .note {
       margin-top: 18px;
-      font-size: 12px;
       color: #888;
+      font-size: 12px;
     }
 
-    /* COMMERCIAL */
+    /* 04 商业合作 */
 
     .commercial {
       background: #e9e7e0;
     }
 
-    /* AI WORKFLOW */
+    /* 05 工作流 */
 
     .workflow {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4,1fr);
       gap: 15px;
     }
 
@@ -359,8 +373,6 @@
       color: #666;
     }
 
-    /* FOOTER */
-
     footer {
       padding: 100px 7%;
       border-top: 1px solid #ccc;
@@ -372,17 +384,13 @@
 
     footer p {
       color: #555;
-      margin-top: 6px;
+      margin-top: 7px;
     }
 
     @media (max-width: 900px) {
 
       .stats {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .stat {
-        border-bottom: 1px solid #ccc;
+        grid-template-columns: repeat(2,1fr);
       }
 
       .case-grid,
@@ -390,12 +398,12 @@
         grid-template-columns: 1fr;
       }
 
-      .workflow {
-        grid-template-columns: repeat(2, 1fr);
+      .content-images {
+        grid-template-columns: repeat(3,1fr);
       }
 
-      .content-images {
-        grid-template-columns: repeat(2, 1fr);
+      .workflow {
+        grid-template-columns: repeat(2,1fr);
       }
 
       h1 {
@@ -410,15 +418,11 @@
       }
 
       section {
-        padding: 75px 6%;
+        padding: 70px 6%;
       }
 
       .hero {
         padding: 60px 6%;
-      }
-
-      .stats {
-        grid-template-columns: repeat(2, 1fr);
       }
 
       .platform-data,
@@ -428,583 +432,531 @@
       }
 
       .content-images {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
       }
 
       .content-images img {
-        height: 230px;
+        height: 190px;
       }
     }
 
   </style>
 </head>
 
-
 <body>
 
-  <!-- NAV -->
 
-  <nav>
-    <strong>NING WEI</strong>
-    <span>CONTENT · SOCIAL MEDIA · GROWTH</span>
-  </nav>
+<!-- 导航 -->
+
+<nav>
+  <strong>蔚凝 WEINING</strong>
+  <span>新媒体 · 内容运营 · SOCIAL MEDIA</span>
+</nav>
 
 
-  <!-- HERO -->
+<!-- 首页 -->
 
-  <section class="hero">
+<section class="hero">
 
-    <div class="tag">
-      CONTENT & SOCIAL MEDIA PORTFOLIO
+  <div class="tag">
+    CONTENT & SOCIAL MEDIA PORTFOLIO
+  </div>
+
+  <h1>
+    把内容做成<br>
+    真正有人看的东西。
+  </h1>
+
+  <div class="hero-name">
+    蔚凝｜新媒体 & 内容运营作品集
+  </div>
+
+  <div class="platforms">
+    小红书 × B站 × 抖音
+  </div>
+
+  <p class="intro">
+    从粉丝向短视频内容，到独立运营小红书账号，再到品牌商业合作。
+    在不同平台的内容实践中，通过真实的数据反馈持续理解用户为什么点击、
+    点赞、收藏与分享，并将这些经验运用到选题、内容制作和账号运营中。
+  </p>
+
+</section>
+
+
+<!-- 核心数据 -->
+
+<div class="stats">
+
+  <div class="stat">
+    <strong>116.3万+</strong>
+    <span>B站累计播放</span>
+  </div>
+
+  <div class="stat">
+    <strong>9.9万+</strong>
+    <span>B站累计获赞</span>
+  </div>
+
+  <div class="stat">
+    <strong>41万+</strong>
+    <span>抖音累计获赞</span>
+  </div>
+
+  <div class="stat">
+    <strong>28.1万+</strong>
+    <span>小红书赞藏</span>
+  </div>
+
+  <div class="stat">
+    <strong>3.1K+</strong>
+    <span>小红书粉丝</span>
+  </div>
+
+  <div class="stat">
+    <strong>22次</strong>
+    <span>品牌合作</span>
+  </div>
+
+</div>
+
+
+<!-- 01 -->
+
+<section class="platform-case">
+
+  <span class="section-number">
+    01 — 多平台短视频内容实践
+  </span>
+
+  <h2>
+    B站 × 抖音<br>
+    粉丝向短视频内容实践
+  </h2>
+
+  <p class="section-intro">
+    从兴趣驱动的粉丝向内容切入，通过素材筛选、视频剪辑、选题判断和内容发布，
+    积累短视频内容实践经验。不同平台的数据反馈也让我逐步形成对热点、
+    用户兴趣和内容节奏的理解。
+  </p>
+
+
+  <div class="case-grid">
+
+    <!-- B站 -->
+
+    <div class="case">
+
+      <span class="case-label">
+        BILIBILI · CONTENT PRACTICE
+      </span>
+
+      <h3>
+        B站｜粉丝向视频剪辑与内容选择
+      </h3>
+
+      <div class="platform-data">
+
+        <div class="mini-stat">
+          <strong>116.3万+</strong>
+          <span>累计播放</span>
+        </div>
+
+        <div class="mini-stat">
+          <strong>9.9万+</strong>
+          <span>累计获赞</span>
+        </div>
+
+      </div>
+
+      <p>
+        围绕娱乐及粉丝兴趣内容进行素材筛选与视频剪辑，
+        根据人物、热点和用户兴趣判断内容方向，并通过节奏、
+        情绪点和素材组合提升视频的可看性。
+      </p>
+
+      <p>
+        这段实践让我积累了热点判断、素材筛选、短视频剪辑以及
+        粉丝社群内容偏好分析等经验。
+      </p>
+
+      <div class="image-placeholder">
+        B站账号 / 数据截图位置
+      </div>
+
     </div>
 
-    <h1>
-      I TURN CONTENT<br>
-      INTO ATTENTION<br>
-      & ACTION.
-    </h1>
 
-    <div class="hero-cn">
-      宁玮｜新媒体 & 内容运营作品集
-    </div>
+    <!-- 抖音 -->
 
-    <div class="platforms">
-      XIAOHONGSHU × BILIBILI × DOUYIN
-    </div>
+    <div class="case">
 
-    <p class="intro">
-      Newcastle University MSc graduate with hands-on experience
-      across social media content creation, short-form video,
-      account operation and commercial collaborations.
-      From fandom content and video editing to independently
-      operating a Xiaohongshu account, I use real content
-      performance to understand what makes audiences click,
-      engage, save and share.
-    </p>
+      <span class="case-label">
+        DOUYIN · SHORT VIDEO
+      </span>
 
-  </section>
+      <h3>
+        抖音｜短视频内容实践
+      </h3>
 
+      <div class="platform-data">
 
-  <!-- CORE DATA -->
+        <div class="mini-stat">
+          <strong>41万+</strong>
+          <span>累计获赞</span>
+        </div>
 
-  <div class="stats">
+        <div class="mini-stat">
+          <strong>短视频</strong>
+          <span>内容实践</span>
+        </div>
 
-    <div class="stat">
-      <strong>1.163M+</strong>
-      <span>BILIBILI TOTAL VIEWS</span>
-    </div>
+      </div>
 
-    <div class="stat">
-      <strong>99K+</strong>
-      <span>BILIBILI TOTAL LIKES</span>
-    </div>
+      <p>
+        围绕娱乐及粉丝向内容进行短视频创作与剪辑，
+        并根据抖音的内容节奏和用户浏览习惯调整呈现方式。
+      </p>
 
-    <div class="stat">
-      <strong>410K+</strong>
-      <span>DOUYIN TOTAL LIKES</span>
-    </div>
+      <p>
+        通过对比不同平台的内容表现，我开始关注开头吸引力、
+        视频节奏、情绪点以及平台用户偏好之间的差异。
+      </p>
 
-    <div class="stat">
-      <strong>281K+</strong>
-      <span>XIAOHONGSHU LIKES & SAVES</span>
-    </div>
+      <div class="image-placeholder">
+        抖音账号 / 数据截图位置
+      </div>
 
-    <div class="stat">
-      <strong>3.1K+</strong>
-      <span>XIAOHONGSHU FOLLOWERS</span>
-    </div>
-
-    <div class="stat">
-      <strong>22</strong>
-      <span>BRAND COLLABORATIONS</span>
     </div>
 
   </div>
 
-
-  <!-- 01 -->
-
-  <section class="platform-case">
-
-    <span class="section-number">
-      01 — MULTI-PLATFORM CONTENT PRACTICE
-    </span>
-
-    <h2>
-      Bilibili × Douyin<br>
-      Short-form Content Practice.
-    </h2>
-
-    <p class="section-intro">
-      My early content practice started with entertainment and
-      fandom-focused short-form video. Through content curation,
-      video editing and trend-based topic selection, I developed
-      a practical understanding of audience attention and
-      platform-specific content performance.
-    </p>
+</section>
 
 
-    <div class="case-grid">
+<!-- 02 -->
 
-      <!-- BILIBILI -->
+<section>
 
-      <div class="case">
+  <span class="section-number">
+    02 — 小红书账号运营
+  </span>
 
-        <span class="case-label">
-          BILIBILI · CONTENT PRACTICE
-        </span>
+  <h2>
+    从流量内容<br>
+    到个人内容账号
+  </h2>
 
-        <h3>
-          Fandom Video Editing & Content Selection
-        </h3>
+  <p class="section-intro">
+    独立运营个人小红书账号，负责选题、内容制作、发布、
+    用户互动及商业合作，并根据个人经历逐步调整账号内容方向。
+  </p>
 
-        <div class="platform-data">
 
-          <div class="mini-stat">
-            <strong>1.163M+</strong>
-            <span>TOTAL VIEWS</span>
-          </div>
+  <div class="account-layout">
 
-          <div class="mini-stat">
-            <strong>99K+</strong>
-            <span>TOTAL LIKES</span>
-          </div>
+    <div class="account-image">
 
+      <img
+        src="xiaohongshu-profile.jpg"
+        alt="蔚凝小红书账号主页"
+      >
+
+    </div>
+
+
+    <div class="account-copy">
+
+      <span class="case-label">
+        ACCOUNT OPERATION · CONTENT TRANSITION
+      </span>
+
+      <h3>
+        留学 · 旅行 · 生活方式
+      </h3>
+
+      <p>
+        账号早期包含娱乐及粉丝向内容，后续结合英国留学经历和欧洲旅行体验，
+        逐步将内容重心转向留学、旅行及生活方式。
+      </p>
+
+      <p>
+        相比单纯追求热点流量，我开始更加关注内容的信息价值、
+        收藏价值和个人表达，希望形成更加稳定且具有个人辨识度的内容方向。
+      </p>
+
+
+      <div class="account-numbers">
+
+        <div class="account-number">
+          <strong>3.1K+</strong>
+          <span>粉丝</span>
         </div>
 
-        <p>
-          Produced and edited fandom-focused video content,
-          combining trending topics, material selection,
-          pacing and emotional hooks to improve audience
-          attention and engagement.
-        </p>
-
-        <p>
-          This experience helped me build practical skills in
-          trend spotting, content selection, video editing and
-          understanding what types of content resonate with
-          specific online communities.
-        </p>
-
-        <div class="image-placeholder">
-          BILIBILI SCREENSHOTS<br><br>
-          下一步把你的 B站主页 / 数据截图放在这里
+        <div class="account-number">
+          <strong>28.1万+</strong>
+          <span>赞与收藏</span>
         </div>
 
-      </div>
-
-
-      <!-- DOUYIN -->
-
-      <div class="case">
-
-        <span class="case-label">
-          DOUYIN · SHORT-FORM VIDEO
-        </span>
-
-        <h3>
-          Platform-oriented Short Video Practice
-        </h3>
-
-        <div class="platform-data">
-
-          <div class="mini-stat">
-            <strong>410K+</strong>
-            <span>TOTAL LIKES</span>
-          </div>
-
-          <div class="mini-stat">
-            <strong>Short-form</strong>
-            <span>VIDEO CONTENT</span>
-          </div>
-
-        </div>
-
-        <p>
-          Explored short-form video content on Douyin with a
-          focus on entertainment and fandom audiences.
-        </p>
-
-        <p>
-          By observing differences in content rhythm, hooks and
-          engagement behaviour across platforms, I developed
-          a stronger understanding of how the same audience
-          interest can require different content presentation.
-        </p>
-
-        <div class="image-placeholder">
-          DOUYIN SCREENSHOTS<br><br>
-          下一步把你的抖音主页 / 数据截图放在这里
+        <div class="account-number">
+          <strong>22次</strong>
+          <span>品牌合作</span>
         </div>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- 02 -->
+<!-- 03 -->
 
-  <section>
+<section>
 
-    <span class="section-number">
-      02 — XIAOHONGSHU ACCOUNT OPERATION
+  <span class="section-number">
+    03 — 历史内容表现
+  </span>
+
+  <h2>
+    用真实数据<br>
+    验证内容判断
+  </h2>
+
+  <p class="section-intro">
+    以下为账号早期部分高表现内容，主要包括娱乐及粉丝向内容。
+    这一阶段的价值并不只在于单篇流量，而在于通过实际发布结果，
+    积累对选题、素材、热点及用户兴趣的判断经验。
+  </p>
+
+
+  <div class="history-card">
+
+    <span class="case-label">
+      HISTORICAL HIGH-PERFORMING CONTENT
     </span>
 
-    <h2>
-      From Traffic Content<br>
-      to Personal Content Identity.
-    </h2>
+    <h3 style="font-size:26px; margin-top:18px;">
+      娱乐 / 粉丝向历史高表现内容
+    </h3>
 
-    <p class="section-intro">
-      I independently operate a Xiaohongshu account covering
-      content planning, creation, publishing, audience
-      engagement and commercial collaborations.
-    </p>
+    <div class="big-number">
+      45万+
+    </div>
 
-
-    <div class="account-layout">
-
-      <div class="account-image">
-
-        <img
-          src="xiaohongshu-profile.jpg"
-          alt="Ning Wei Xiaohongshu Account"
-        >
-
-      </div>
+    <div class="number-label">
+      单篇历史最高浏览
+    </div>
 
 
-      <div class="account-copy">
+    <div class="content-images">
 
-        <span class="case-label">
-          ACCOUNT OPERATION · CONTENT TRANSITION
-        </span>
+      <img src="xiaohongshu2-profile.jpg" alt="历史内容截图1">
 
-        <h3>
-          Study Abroad · Travel · Lifestyle
-        </h3>
+      <img src="xiaohongshu3-profile.jpg" alt="历史内容截图2">
 
-        <p>
-          The account initially included entertainment and
-          fandom-related content. I later repositioned it around
-          my own overseas study experience, European travel and
-          lifestyle content.
-        </p>
+      <img src="xiaohongshu4-profile.jpg" alt="历史内容截图3">
 
-        <p>
-          This transition allowed me to move from primarily
-          traffic-driven content toward a more sustainable
-          personal content identity built around useful
-          information and authentic experiences.
-        </p>
+      <img src="xiaohongshu5-profile.jpg" alt="历史内容截图4">
 
-        <div class="account-numbers">
+      <img src="xiaohongshu6-profile.jpg" alt="历史内容截图5">
 
-          <div class="account-number">
-            <strong>3.1K+</strong>
-            <span>FOLLOWERS</span>
-          </div>
-
-          <div class="account-number">
-            <strong>281K+</strong>
-            <span>LIKES & SAVES</span>
-          </div>
-
-          <div class="account-number">
-            <strong>22</strong>
-            <span>BRAND COLLABORATIONS</span>
-          </div>
-
-        </div>
-
-      </div>
+      <img src="xiaohongshu7-profile.jpg" alt="历史内容截图6">
 
     </div>
 
-  </section>
 
-
-  <!-- 03 -->
-
-  <section>
-
-    <span class="section-number">
-      03 — CONTENT PERFORMANCE
-    </span>
-
-    <h2>
-      Content That<br>
-      Earned Attention.
-    </h2>
-
-    <p class="section-intro">
-      Selected historical high-performing posts from my
-      Xiaohongshu account. These include early-stage
-      entertainment and fandom content and are presented
-      as evidence of content selection, editing and
-      audience-engagement experience rather than as
-      fully original personal-IP content.
+    <p class="note">
+      * 该阶段包含素材整理、剪辑及粉丝向内容。
+      此处数据主要用于展示选题判断、内容加工及用户互动表现，
+      不将全部历史内容表述为原创作品。
     </p>
+
+  </div>
+
+</section>
+
+
+<!-- 04 -->
+
+<section class="commercial">
+
+  <span class="section-number">
+    04 — 商业合作
+  </span>
+
+  <h2>
+    从内容流量<br>
+    到商业转化
+  </h2>
+
+  <p class="section-intro">
+    在持续运营账号的过程中，逐步获得品牌合作机会，
+    并尝试将商业信息自然融入留学、旅行和生活方式内容。
+  </p>
+
+
+  <div class="case-grid">
+
+    <div class="case">
+
+      <span class="case-label">
+        BRAND COLLABORATIONS
+      </span>
+
+      <div class="big-number">
+        22次
+      </div>
+
+      <h3>
+        已完成品牌合作
+      </h3>
+
+      <p>
+        合作内容覆盖留学、旅行和生活方式等场景，
+        根据产品特点寻找适合账号受众的内容切入方式，
+        尽量降低商业内容与日常内容之间的割裂感。
+      </p>
+
+    </div>
 
 
     <div class="case">
 
       <span class="case-label">
-        HISTORICAL HIGH-PERFORMING CONTENT
+        COMMERCIAL RESULT
       </span>
 
+      <div class="big-number">
+        ¥4,587
+      </div>
+
       <h3>
-        Entertainment & Fandom Content
+        累计合作收入
       </h3>
 
-      <div class="big-number">
-        450K+
-      </div>
-
-      <div class="number-label">
-        PEAK HISTORICAL CONTENT VIEWS
-      </div>
-
-
-      <div class="content-images">
-
-        <img
-          src="xiaohongshu2-profile.jpg"
-          alt="Historical Xiaohongshu Content 1"
-        >
-
-        <img
-          src="xiaohongshu3-profile.jpg"
-          alt="Historical Xiaohongshu Content 2"
-        >
-
-        <img
-          src="xiaohongshu4-profile.jpg"
-          alt="Historical Xiaohongshu Content 3"
-        >
-
-        <img
-          src="xiaohongshu5-profile.jpg"
-          alt="Historical Xiaohongshu Content 4"
-        >
-
-        <img
-          src="xiaohongshu6-profile.jpg"
-          alt="Historical Xiaohongshu Content 5"
-        >
-
-        <img
-          src="xiaohongshu7-profile.jpg"
-          alt="Historical Xiaohongshu Content 6"
-        >
-
-      </div>
-
-
-      <p class="note">
-        * Historical account performance includes curated,
-        edited and fandom-related content. Metrics are used
-        to demonstrate content judgement and platform
-        engagement experience.
+      <p>
+        通过个人账号内容获得付费合作，
+        将内容创作与账号运营转化为实际商业价值，
+        完成从内容发布到商业合作的实践闭环。
       </p>
 
     </div>
 
-  </section>
+  </div>
+
+</section>
 
 
-  <!-- 04 -->
+<!-- 05 -->
 
-  <section class="commercial">
+<section>
 
-    <span class="section-number">
-      04 — COMMERCIAL COLLABORATIONS
-    </span>
+  <span class="section-number">
+    05 — 内容工作流 & AI
+  </span>
 
-    <h2>
-      Turning Content<br>
-      Into Commercial Value.
-    </h2>
+  <h2>
+    我的内容工作方式
+  </h2>
 
-    <p class="section-intro">
-      Beyond traffic and engagement, I have also gained
-      hands-on experience working with brands and integrating
-      commercial messages into social content.
-    </p>
+  <p class="section-intro">
+    从用户需求和平台内容出发完成选题、制作与复盘，
+    同时使用 AI 辅助资料整理、创意发散、文案优化及效率提升。
+  </p>
 
 
-    <div class="case-grid">
+  <div class="workflow">
 
-      <div class="case">
+    <div class="workflow-step">
 
-        <span class="case-label">
-          BRAND COLLABORATIONS
-        </span>
+      <span>STEP 01</span>
 
-        <div class="big-number">
-          22
-        </div>
+      <h3>用户 & 内容洞察</h3>
 
-        <h3>
-          Completed Collaborations
-        </h3>
-
-        <p>
-          Worked on sponsored content across study-abroad,
-          travel and lifestyle scenarios, integrating brand
-          messages into content rather than treating
-          advertisements as isolated posts.
-        </p>
-
-      </div>
-
-
-      <div class="case">
-
-        <span class="case-label">
-          COMMERCIAL RESULT
-        </span>
-
-        <div class="big-number">
-          ¥4,587
-        </div>
-
-        <h3>
-          Collaboration Revenue
-        </h3>
-
-        <p>
-          Converted personal social media content into
-          measurable commercial value through paid
-          collaborations and brand partnerships.
-        </p>
-
-      </div>
+      <p>
+        观察用户关注的问题、平台热点和搜索需求，
+        判断哪些内容值得做。
+      </p>
 
     </div>
 
-  </section>
 
+    <div class="workflow-step">
 
-  <!-- 05 -->
+      <span>STEP 02</span>
 
-  <section>
+      <h3>选题 & 内容策划</h3>
 
-    <span class="section-number">
-      05 — CONTENT WORKFLOW & AI
-    </span>
-
-    <h2>
-      How I Work.
-    </h2>
-
-    <p class="section-intro">
-      I combine content judgement with AI-assisted tools
-      to improve research, ideation, copy development and
-      iteration efficiency.
-    </p>
-
-
-    <div class="workflow">
-
-      <div class="workflow-step">
-
-        <span>STEP 01</span>
-
-        <h3>
-          Audience Insight
-        </h3>
-
-        <p>
-          Identify audience interests, search needs,
-          trends and potential content angles.
-        </p>
-
-      </div>
-
-
-      <div class="workflow-step">
-
-        <span>STEP 02</span>
-
-        <h3>
-          Content Strategy
-        </h3>
-
-        <p>
-          Turn audience needs into topics, hooks,
-          titles and content structures.
-        </p>
-
-      </div>
-
-
-      <div class="workflow-step">
-
-        <span>STEP 03</span>
-
-        <h3>
-          Production
-        </h3>
-
-        <p>
-          Create and edit copy, visual content and
-          short-form video for different platforms.
-        </p>
-
-      </div>
-
-
-      <div class="workflow-step">
-
-        <span>STEP 04</span>
-
-        <h3>
-          Review & AI-assisted Iteration
-        </h3>
-
-        <p>
-          Review performance data and use AI tools
-          to support research, copy optimisation,
-          ideation and workflow efficiency.
-        </p>
-
-      </div>
+      <p>
+        将用户需求转化为具体选题，并设计标题、
+        开头吸引点和内容结构。
+      </p>
 
     </div>
 
-  </section>
+
+    <div class="workflow-step">
+
+      <span>STEP 03</span>
+
+      <h3>内容制作</h3>
+
+      <p>
+        独立完成图文内容、文案及短视频素材整理与剪辑，
+        根据不同平台调整表达方式。
+      </p>
+
+    </div>
 
 
-  <!-- ABOUT -->
+    <div class="workflow-step">
 
-  <footer>
+      <span>STEP 04</span>
 
-    <span class="section-number">
-      ABOUT ME
-    </span>
+      <h3>数据复盘 & AI辅助</h3>
 
-    <h2>
-      Ning Wei
-    </h2>
+      <p>
+        根据浏览、点赞、收藏、分享等反馈复盘内容，
+        并使用 AI 辅助资料整理、文案优化和创意发散。
+      </p>
 
-    <p>
-      Newcastle University · MSc Accounting & Finance
-    </p>
+    </div>
 
-    <p>
-      Content Operations · Social Media · New Media · Brand Content
-    </p>
+  </div>
 
-    <p style="margin-top:25px; max-width:650px;">
-      Interested in understanding why people click,
-      engage, save and share — and turning those
-      insights into content that creates measurable value.
-    </p>
+</section>
 
-  </footer>
+
+<!-- 关于我 -->
+
+<footer>
+
+  <span class="section-number">
+    ABOUT ME
+  </span>
+
+  <h2>
+    蔚凝 WEINING
+  </h2>
+
+  <p>
+    英国纽卡斯尔大学 · Accounting & Finance 硕士
+  </p>
+
+  <p>
+    求职方向：新媒体运营 · 内容运营 · 社交媒体运营 · 品牌内容
+  </p>
+
+  <p style="margin-top:25px; max-width:680px;">
+    我关注的不只是“发一条内容”，而是用户为什么会点击、
+    为什么愿意停留、收藏和分享，以及如何根据真实反馈持续优化下一条内容。
+  </p>
+
+</footer>
+
 
 </body>
 </html>
